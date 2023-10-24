@@ -1,0 +1,283 @@
+:root {
+    --rouge: #c10000;
+    --bleu: #9598fb;
+    --violet : #6c71fb7e;
+    --gris:rgba(86, 86, 86, 0.604);
+}
+
+/* 
+----- Corps principal ----- 
+*/
+
+body{ 
+    margin:0;
+    background-image: url('../images/background2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+}
+
+section.body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* Titre partie */
+
+hr.bottom, hr.top {
+    text-align: center;
+    width: 80%;
+    border-color: var(--rouge);
+}
+
+hr.top{
+    margin-top: 3rem;
+}
+
+hr.bottom {
+    margin-bottom: 3rem;
+}
+
+.fond{
+    padding: 30px;
+    background-color: var(--gris);
+    border-radius: 10px;
+    color: white;
+}
+
+/* 
+----- HEADER ----- 
+*/
+
+header{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+
+    background-color: var(--gris);
+    color: white;
+}
+
+/* Décolement des divs */
+
+div.headerleft{
+    margin-left: 1rem;
+}
+
+div.headerright a:last-child{
+    margin-right: 1rem;
+    /* margin-left:5px; */
+}
+
+/* Gérer les liens */
+
+header a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 6px;
+    transition:  background-color 0.3s ease-out;
+}
+
+/* Animation des liens  */
+
+header a:hover{
+    color: white;
+    background-color: var(--rouge);
+    border-radius: 3px;
+}
+
+#encadre{
+    color: white;
+    border-color: var(--rouge);
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 3px;
+}
+
+header a:active{
+    /* font-size: 16px; */
+    /* margin-right: 10px; */
+
+    /* font-weight: bold; */
+
+    text-decoration: underline;
+    font-size: 15px;
+    padding: 6px;
+    background-color: var(--rouge);
+    border-radius: 3px;
+
+}
+
+/* 
+----- PROFIL ----- 
+*/
+
+h2#presentation{
+    color: white;
+    text-align: center;
+}
+
+div.presentation{
+    width: 50%;
+    margin: auto;
+    display:flex;
+    justify-content: space-around;
+    flex: 1 0 0%;
+    column-gap: 1rem;
+
+    align-items: center;
+}
+
+div.presentation img{
+    width: 300px;
+    border-radius: 10px;
+    /* border-style:solid;
+    color: var(--rouge); */
+}
+
+
+div.presentation a {
+    text-decoration: none;
+    color: var(--bleu);
+}
+
+
+div.presentation a:hover {
+    text-decoration: underline;
+}
+
+
+/* 
+----- Documents tableau de synthèse ----- 
+*/
+
+.iframe{
+    text-align: center;
+}
+
+table {
+    width: 50%;
+    text-align: center;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+
+th, td {
+    border: 1px solid white;
+    height: 5rem;
+}
+
+.synthese {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    margin-top: 2rem; 
+    margin-left: 10rem;
+    margin-right: 10rem;
+
+    background-color: var(--gris);
+    color: white;
+}
+
+.synthese  a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 6px;
+    transition:  background-color 0.3s ease-out;
+}
+
+.synthese a:hover {
+    color: white;
+    background-color: var(--rouge);
+    border-radius: 3px;
+}
+/* 
+----- Veilles technologiques ----- 
+*/
+
+.banniere {
+    width: 100%;
+    height: 15rem;
+    margin: 0;
+}
+
+
+/* Container article */
+
+.article {
+    margin-top: 2rem;
+    display: flex;
+    column-gap: 2rem;
+}
+
+.article img {
+    width: 250px;
+    height: 250px;
+}
+
+.article a {
+    text-decoration: none;
+    color: var(--bleu);
+}
+
+
+.article a:hover {
+    text-decoration: underline;
+}
+
+
+/* Download and view files */
+
+.file{
+    margin: auto;
+
+    width: 30%;
+    height: 2rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.file a{
+    color: white;
+    text-decoration: none;
+    display:flex;
+    column-gap: 8px;
+    align-items: center;
+}
+
+.view, .download{
+    width : 30px;
+    filter: invert();
+}
+
+/* Version tableau */
+
+.file_tableau{
+    margin: auto;
+
+    width: 90%;
+    height: 2rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.file_tableau a{
+    color: white;
+    text-decoration: none;
+    display:flex;
+    column-gap: 8px;
+    align-items: center;
+}

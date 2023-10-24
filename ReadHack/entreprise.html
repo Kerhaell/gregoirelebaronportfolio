@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A propos de nous</title>
+    <link id="css" rel="stylesheet" href="./css/AP1.css">
+    <script src="./js/form.js" defer></script>
+    <script src="./js/dark.js" defer></script>
+    <script src="./js/epique.js" defer></script>
+</head>
+<body>
+    <section class="header">
+        <header>
+
+            <div class="bannieregauche">
+                <a href="AP1.html"><img src="./images/logododo.png" alt="" class="header"></a>
+                <h1>
+                    <span class="georgia"><span class="degrade">Read</span><span class="bleu">Hack</span></span>
+                </h1>
+            </div>
+
+
+            <div class="navigation">
+                <nav>
+                    <a href="entreprise.html" class="banniere">Entreprise</a>
+                    <a href="offres.html" class="banniere">Nos offres</a>
+                    <a href="contact.html" class="banniere">Contact</a>
+                </nav>
+            </div>
+        </header>   
+    </section>
+
+    <div class="container">
+        <section class="slogan">
+            <p>
+                <span class="degrade">Once you go ReadHack, you never go back. </span>
+            </p>
+        </section>
+
+
+        <section class="presentation">
+            <h1>Présentation de l'entreprise</h1>
+            <div class="presentationimg">
+                <p>Goulnara FATOEV, détentrice du Moulin Rouge a décidé, avec l’aide de ses associés, de fonder l’entreprise ReadHack. Jouissant de la réputation du Moulin Rouge, l’entreprise se démarque rapidement car elle offre une expérience inédite alliant travail et plaisir ! Expérience qui ravit les clients et les salariés. 
+                    <br> L’entreprise se compose d’une équipe au sein de laquelle confiance et efficacité sont les maîtres mots. La grande diversité des talents au sein de l’équipe permet également d’offrir un service sur-mesure pour chaque client.</p>
+                <img src="./images/devanture.PNG" id="devanture" class="devanture" onclick="changepict()">
+            </div>  
+        </section>
+
+        <br><br>
+        <h1>Nos valeurs</h1>
+        <section class="valeurs">
+            <img src="./images/agile.png" alt="">
+            <img src="./images/confiance.png" alt="">
+            <img src="./images/diversite.png" alt="">
+            <img src="./images/efficace.png" alt="">
+            <div class="goulnara">
+                <p style="font-weight: bold;">Agilité</p>
+                <p style="text-align: justify;">Nous adoptons et favorisons un esprit entreprenariat pour découvrir au quotidien de nouvelles manières de répondre aux besoins des clients.
+                </p>
+            </div>
+            <div class="jb">
+                <p style="font-weight: bold;">Confiance</p>
+                <p style="text-align: justify;">La volonté de responsabiliser les Hommes et les équipes, de faire prendre les décisions à un niveau aussi proche que possible de ceux qui auront à les exécuter.</p>
+            </div>
+            <div class="romain">
+                <p style="font-weight: bold;">Diversité</p>
+                <p style="text-align: justify;">Nous reconnaissons et valorisons chacun des salariés et clients dans sa singularité ou sa différence.</p>
+            </div>
+            <div class="greg">
+                <p style="font-weight: bold;">Efficacité</p>
+                <p style="text-align: justify;">Nous recherchons la pleine satisfaction de nos clients grâce à l'efficacité de nos équipes et la performance de nos solutions.</p> 
+            </div>
+        </section>
+
+        <br><br>
+
+        <section class="avis">
+            <h2>Ils ont parlé de nous</h2>
+            <div class="com1">
+                <h3><span class="degrade">C-3PO</span></h3>
+                <hr>
+                <p>J'ai récemment fait appel à cette entreprise pour l'installation d'un réseau informatique dans mon entreprise et j'ai été très satisfait du résultat. Le personnel a été professionnel et compétent, et a su s'adapter à nos besoins spécifiques. L'installation s'est déroulée sans accroc et notre réseau fonctionne à merveille. Je recommande vivement cette entreprise à tous ceux qui cherchent à mettre en place un réseau informatique de qualité.</p>
+            </div>
+
+            <div class="com2">
+                <h3><span class="degrade">Jamy</span></h3>
+                <hr>
+                <p>Ayant lancé depuis peu un chaine Youtube, j'ai pu profiter de l'expérience de ReadHack pour gérer toute l'installation des équipements audiovisuels. Je peux donc maintenant, aisément me lancer dans cette nouvelle activité. Merci ReadHack ! </p>
+            </div>
+
+            <div class="com3">
+                <h3><span class="degrade">R2-D2</span></h3>
+                <hr>
+                <p>J'ai récemment fait appel à cette entreprise de création de sites internet et j'ai été agréablement surpris par leur rapidité d'exécution. En moins de temps qu'il n'en faut pour écrire "www", ils ont créé un site internet époustouflant pour mon entreprise. Je recommande vivement cette entreprise à tous ceux qui cherchent à mettre leur entreprise sur le web avec style et efficacité.</p>
+            </div>
+        </section>
+    </div>
+    <section class="redavis">
+        <div class="sep">
+            <div class="right"></div>
+            <div class="left"></div>
+            <h2 class="h2redavis">
+                Laissez nous un avis 
+            </h2>
+        </div>
+        <div class="container2">
+        <div class="form" id="avis">
+            <form id="formulaire" novalidate>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="firstname" placeholder="Nom" required>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                        <input type="lastname" placeholder="Prénom" required>
+                        </td>
+                    </tr>
+        
+                    <tr>
+                        <td>
+                            <input type="email" placeholder="Adresse mail" required>
+                        </td>
+                    </tr>
+        
+                    <tr>
+                        <td>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Votre avis" required></textarea>
+                        </td>
+                    </tr>
+        
+                    <tr class="submit">
+                        <td>
+                            <input type="submit" class='submit'>
+                        </td>
+                    </tr>
+                </table>   
+            </form>
+        </div>
+    </section>
+    </div>
+
+
+    <footer>
+        <div class="flogo">
+            <p class="flogo"><span class="georgia"><span class="degrade">Read</span><span class="bleu">Hack</span></span></p>
+        </div>
+        <div class="fnav">
+            <p class="fnav">Naviguer : 
+                <a href="entreprise.html" class="fent">Entreprise</a>
+                <a href="offres.html" class="foff">Nos offres</a>
+                <a href="contact.html" class="fcon">Contact</a>
+                <a href="rejoindre.html" class="frej">Nous rejoindre</a>
+            </p>
+        </div>
+
+        <p class="fsui">Nous suivre</p>
+        <div class="suivre">
+            <a href="https://www.instagram.com/ecole_ipssi/" class="insta">
+                <img src="./images/logoinsta.png" alt="">
+            </a>
+            <a href="https://www.facebook.com/ecoleipssi" class="fb">
+                <img src="./images/logofb.png" alt="">
+            </a>
+            <a href="https://www.linkedin.com/school/ipssi/mycompany/verification/" class="linkedin">
+                <img src="./images/logoli.png" alt="">
+            </a>
+            <a href="https://www.youtube.com/@IPSSI" class="yt">
+                <img src="./images/logoyt.png" alt="">
+            </a>
+        </div>
+
+        <a class="fmen" href="mentions.html">Mentions légales</a>
+        <p class="fdro">Copyright © 2022 - 2023</p>
+
+        <a href="#" class="haut2page"><img src="./images/haut_de_page.png" alt=""></a>
+        <img src="./images/nuit.png" alt="" id="changemod" onclick="changemod()">
+    </footer>
+
+</body>

@@ -1,0 +1,62 @@
+:root {
+    --rouge: #c10000;
+    --bleu: #9598fb;
+    --violet : #6c71fb7e;
+    --gris:rgba(86, 86, 86, 0.604);
+}
+
+body {
+    background-image: url('../images/accueil2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+}
+
+div.accueil a {
+    text-decoration: none;
+    color: white;
+    font-size:25px;
+}
+
+div.accueil {
+    color: rgb(255, 255, 255);
+    position: fixed;
+    top: 35%;
+    left: 10%;
+    /* text-align: center;
+    position: center; */
+}
+
+/* h1{
+    font-size:40px;
+}  */
+
+
+
+h1.anim {
+    border-right: solid 3px var(--rouge);
+    white-space: nowrap;
+    overflow: hidden;    
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Animation */
+  h1.anim {
+    animation: animated-text 2s steps(29,end) 1s 1 normal both,
+               animated-cursor 750ms steps(29,end) infinite;
+  }
+  
+  /* text animation */
+  
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width:700px;}
+  }
+  
+  /* cursor animations */
+  
+  @keyframes animated-cursor{
+    from{border-right-color: var(--rouge);}
+    to{border-right-color: transparent;}
+  }
